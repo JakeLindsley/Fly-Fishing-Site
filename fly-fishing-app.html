@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fly Fishing Fun Generator</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background: url('https://images.unsplash.com/photo-1508672019048-805c876b67e2') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #output {
+      margin-top: 30px;
+      font-size: 1.3em;
+      line-height: 1.6;
+    }
+
+    a.back-link {
+      display: block;
+      margin-top: 40px;
+      color: #ddd;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>🎣 Fly Fishing Fun Generator</h1>
+    <p>Click a button to get a fly fishing riddle or fun fact!</p>
+
+    <button onclick="showRiddle()">Get a Riddle</button>
+    <button onclick="showFact()">Get a Fun Fact</button>
+
+    <div id="output"></div>
+
+    <a href="scratch.html" class="back-link">← Back to Scratch Page</a>
+  </div>
+
+  <script>
+    const riddles = [
+      "I have no hook, but fish I find. My fluttering wings are one of a kind. What am I? (A fly!)",
+      "The more silent I am, the more fish I get. If I talk too loud, I may regret. What am I? (A fly fisher!)",
+      "You cast me out, but hope I return—with a prize that wriggles. What am I? (A fishing line!)"
+    ];
+
+    const facts = [
+      "Fly fishing dates back to the Roman Empire—over 2,000 years ago!",
+      "The world's largest trout caught on fly weighed over 40 pounds!",
+      "In fly fishing, artificial flies are often hand-tied using feathers and fur.",
+      "The most expensive fly ever sold went for $2,500!"
+    ];
+
+    function showRiddle() {
+      const random = riddles[Math.floor(Math.random() * riddles.length)];
+      document.getElementById('output').innerText = random;
+    }
+
+    function showFact() {
+      const random = facts[Math.floor(Math.random() * facts.length)];
+      document.getElementById('output').innerText = random;
+    }
+  </script>
+
+</body>
+</html>

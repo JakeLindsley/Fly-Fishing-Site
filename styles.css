@@ -1,0 +1,76 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #e8f5f2;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #4a7c59;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1508672019048-805c876b67e2');
+    background-size: cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ddd;
+    margin-top: 40px;
+}
+/* Make sure all links are styled properly */
+a {
+    color: #4CAF50; /* Green color for the link */
+    font-weight: bold;
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  /* Make the link stand out when hovered over */
+  a:hover {
+    color: #388e3c; /* Darker green on hover */
+    background-color: #e8f5e9; /* Light green background on hover */
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline when hovered */
+  }
+  
+  /* Optional: Add styles to make the link appear inside a button-like box */
+  a.button-link {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  a.button-link:hover {
+    background-color: #388e3c;
+  }
